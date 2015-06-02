@@ -1,0 +1,380 @@
+/***************************************** GLOBAL */
+body {
+    -webkit-font-smoothing: antialiased;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+hr {
+    margin: 50px 0 50px 0;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -110px;
+    visibility: hidden;
+}
+
+#main-container {
+    max-width: 1024px;
+    min-width: 470px;
+    margin: 315px auto 0px auto;
+}
+
+p {
+    text-align: left;
+    font-size: 14px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3 { width: 32.26%; }
+
+.span_2_of_2 { width: 100%; }
+.span_1_of_2 { width: 49.2%; }
+
+@media only screen and (max-width: 550px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+    .span_2_of_2, .span_1_of_2 { 
+        width: 100%;
+    }
+}
+
+#thank-you-message {
+    margin: 50px auto 0px auto;
+    padding: 15px;
+    background-color: aquamarine;
+    color: black;
+    width: 70%;
+}
+
+#error-message {
+    margin: 50px auto 0px auto;
+    padding: 15px;
+    background-color: #CC6666;
+    color: black;
+    width: 70%;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #555555;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #555555;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #555555;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #555555;
+}
+
+/***************************************** HEADER */
+
+#social-link-container {
+    margin: auto;
+    max-width: 1000px;
+    height: 35px;
+}
+
+.social-link {
+    display: inline-block;
+    float: right;
+}
+
+#title-font {
+    margin: auto;
+    position: relative;
+    display: inline-block;
+    top: 5px;
+    font-size: 60px;
+}
+
+#subtitle-font {
+    margin-top: 5px;
+    display: inline-block;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 315px;
+    background-image: url("../images/mikeborisheader.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+header.sticky {
+    height: 120px;
+}
+
+#nav {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px;
+    border: solid white 2px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#nav.sticky {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    margin-left: -251px;
+}
+
+#nav li {
+    display: inline-block;
+    height: 55px;
+    line-height: 55px;
+    width: 120px;
+}
+
+@media only screen and (max-width: 550px) {
+	#nav li {
+        display: inline-block;
+        height: 55px;
+        line-height: 55px;
+        width: 80px;
+    }
+    
+    #nav.sticky {
+        margin-left: -172px;
+    }
+}
+
+#nav a {
+    text-decoration: none;
+    color: white;
+}
+
+#nav-mid-l, #nav-mid-r {
+    border-left: solid white 2px;
+}
+
+#nav-mid-r {
+    border-right: solid white 2px;
+}
+
+/***************************************** MAIN */
+
+.label-font {
+    display: inline-block;
+    color: #ffe013;
+    font-size: 25px;
+    margin: 20px 0 0 0;
+}
+
+.sublabel-font {
+    display: inline-block;
+    color: #ffe013;
+    font-size: 14px;
+}
+
+.bullets {
+    margin: auto;
+    max-width: 600px;
+    margin-top: 30px;
+}
+
+.circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ffe013;
+    border-radius: 5px;
+}
+
+.video-container {
+    max-width: 300px;
+    margin: auto;
+}
+
+.video-thumbnail {
+    margin: auto;
+    max-width: 267px;
+    height: 150px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: solid white 1px;
+}
+
+#email-send {
+    color: black;
+    width: 100px;
+    height: 40px;
+    background-color: #ffe013;
+    line-height: 40px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+input, textarea {
+    background-color: grey;
+    border-radius: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input {
+    padding: 0 15px 0 15px;
+    border: none;
+    width: 100%;
+    height: 40px;
+}
+
+input[type=submit] {
+    width: 100px;
+    height: 30px;
+    background-color: aliceblue;
+    border-radius: 15px;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+}
+
+form {
+    margin: auto;
+    max-width: 700px;
+}
+
+/***************************************** ADMIN */
+
+#admin-header {
+    z-index: 1000;
+    position: fixed;
+    text-align: right;
+    padding: 10px;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: cadetblue;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#admin-form {
+    margin-top: 70px;
+}
+
+td.title-cell {
+    width: 70%;
+}
+
+td.vid-cell {
+}
+
+#sortable { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#sortable li {
+    text-align: left;
+    padding: 5px;
+    margin: 5px 0 5px 0;
+    font-size: 1.4em;
+    height: auto;
+    background-color: cadetblue;
+}
+
+.video-id {
+    width: 120px;
+    margin-right: 10px;
+}
+
+.video-title {
+    width: 300px;
+}
+
+.video-title, .video-id {
+    background: white;
+    display: inline-block;
+}
+
+.delete-box {
+    display: inline-block;
+    height: 20px;
+    font-size: 10px;
+    float: right;
+}
+
+.delete-box input {
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin: 0;
+    vertical-align: bottom;
+    position: relative;
+    top: 1px;
+    *overflow: hidden;
+}
+
+.drag-arrow {
+    width: 30px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/***************************************** ACCOUNT SETTINGS */
+
+#account-settings {
+    padding: 5px;
+    background-color: cadetblue;
+    width: 100%;
+    text-align: right;
+    font-size: 10px;
+}
+
+#account-settings input {
+    background-color: white;
+}
+
+.left-column {
+    width: 150px;
+    padding-right: 5px;
+}
+
+.admin-menu-link {
+    float: left;
+    margin-right: 15px;
+}
