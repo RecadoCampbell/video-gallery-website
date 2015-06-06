@@ -15,13 +15,14 @@ if (!empty($_POST)) {
     send_email($firstName, $lastName, $email, $company, $subject, $message);
 }
 ?>
+<!DOCTYPE HTML>
 <html>
     <head>
         <title>Mike Boris</title>
         <link rel="shortcut icon" href="http://faviconist.com/icons/029cf779921987daaad49d9662e39800/favicon.ico" />
         <meta name="description" content="">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     </head>
     <body>

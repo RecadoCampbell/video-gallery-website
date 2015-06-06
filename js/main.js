@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    $( "#sortable" ).sortable();
     // Uploads the order of videos to the database as a string
     $("#submit-button").click(function(){
         var postData = $("#sortable").sortable('serialize');
